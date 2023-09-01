@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the camera boxes row */
+.cameras {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+/* Styling for individual camera boxes */
+.camera-box {
+    border: 1px solid #ccc;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* Styling for small camera boxes */
+.small-camera-box {
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+/* Styling for selected small camera boxes */
+.small-camera-box.selected {
+    background-color: lightblue;
+}
+
+/* Styling for camera images */
+.camera-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling for the monitor container */
+.monitor-container {
+    display: grid; /* Use grid layout for monitors */
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Styling for camera videos */
+.camera-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
